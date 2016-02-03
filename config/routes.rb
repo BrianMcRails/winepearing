@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :wines
+  resources :charges
   devise_for :users
   get 'home' =>'welcome#index', as: 'home'
   get 'winelist' =>'wines#index', as: 'winelist'
