@@ -1,0 +1,10 @@
+<h1>Wine p<strong>Ear</strong>ing</h1>
+
+<div class="wrapper">
+	<p>
+		<% if user_signed_in? %>
+			<%= link_to 'View all wines', controller: "wines" %>
+		<% else %>
+			Please <%= link_to 'Sign up', new_user_registration_path %> or <%= link_to 'Log in', new_user_session_path %> to view and search wines.
+		<% end %>
+	</p>
